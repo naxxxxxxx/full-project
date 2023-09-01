@@ -1,7 +1,7 @@
 ## 服务端接口说明
 ### 技术选型
-1. nodejs koa2框架
-2. mysql 和 redis 库
+1. nodejs koa2框架  
+2. umi + and design
 
 ## 前端说明
 ### 安装依赖

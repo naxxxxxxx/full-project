@@ -9,7 +9,7 @@
  * @param onError 通知错误回调
  * @constructor
  */
-const Notify = (title, {body = "点击查看详情", icon = "https://static.yezixigame.com/resources/images/ifunworks/icon-black-white-radius.png", data = null}, onClick, onClose, onError) => {
+const Notify = (title, {body = "点击查看详情", icon = "", data = null}, onClick, onClose, onError) => {
   Notification.requestPermission().then(permission => {
     // 浏览器已获得权限直接通知，否则不通知
     if (permission === "granted") {
