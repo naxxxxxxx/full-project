@@ -1,0 +1,167 @@
+// 颜色
+@whiteColor: #f8fcff;
+@mainColor: #222222;
+@greyColor: #cccccc;
+@primaryColor: #1b9aee;
+@greenColor: #15ad31;
+
+//
+@MainColor: #2c2c2c;
+@SubColor: #f5f5f5;
+@ColorSub: #aaaaaa;
+@PrimaryColor: #3785d8;
+@BorderColor: #e5e5e5;
+
+// 方法
+.transition(@property,@duration) {
+  -webkit-transition: @property @duration;
+  -moz-transition: @property @duration;
+  transition: @property @duration;
+}
+
+.translate(@x,@y) {
+  -webkit-transform: translate(@x, @y);
+  -moz-transform: translate(@x, @y);
+  transform: translate(@x, @y);
+}
+
+.boxShadow(@x,@y,@z,@color) {
+  -webkit-box-shadow: @x @y @z @color;
+  -moz-box-shadow: @x @y @z @color;
+  box-shadow: @x @y @z @color;
+}
+
+.radius(@x) {
+  -webkit-border-radius: @x;
+  -moz-border-radius: @x;
+  border-radius: @x;
+}
+
+.clearfix {
+  zoom: 1;
+  &::after,
+  &::before {
+    display: table;
+    content: '';
+  }
+  &::after {
+    clear: both;
+  }
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+
+.shadow(@x,@y,@size,@color) {
+  -webkit-box-shadow: @x @y @size @color;
+  -moz-box-shadow: @x @y @size @color;
+  box-shadow: @x @y @size @color;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.Flex {
+  -webkit-display: flex;
+  -moz-display: flex;
+  display: flex;
+}
+.SpaceBetween {
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.AlignCenter {
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+}
+
+.JustifyCenter {
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+}
+
+.FlexDirectionColumn {
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+}
+.Radius(@x) {
+  -webkit-border-radius: @x;
+  -moz-border-radius: @x;
+  border-radius: @x;
+}
+
+.RadiusLeft(@x) {
+  -webkit-border-top-left-radius: @x;
+  -webkit-border-bottom-left-radius: @x;
+  -moz-border-radius-topleft: @x;
+  -moz-border-radius-bottomleft: @x;
+  border-top-left-radius: @x;
+  border-bottom-left-radius: @x;
+}
+.RadiusRight(@x) {
+  -webkit-border-top-right-radius: @x;
+  -webkit-border-bottom-right-radius: @x;
+  -moz-border-radius-topright: @x;
+  -moz-border-radius-bottomright: @x;
+  border-top-right-radius: @x;
+  border-bottom-right-radius: @x;
+}
+.RadiusLeftTop(@x) {
+  -webkit-border-top-left-radius: @x;
+  -moz-border-radius-topleft: @x;
+  border-top-left-radius: @x;
+}
+.RadiusRightTop(@x) {
+  -webkit-border-top-right-radius: @x;
+  -moz-border-radius-topright: @x;
+  border-top-right-radius: @x;
+}
+.Flex1 {
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  flex: 1;
+}
+
+.FlexWrap {
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.AlignContent {
+  -webkit-align-content: flex-start;
+  -moz-align-content: flex-start;
+  align-content: flex-start;
+}
+
+.FilterGray {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+}
+
+.Mask(@z, @color) {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: @color;
+  z-index: @z;
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}

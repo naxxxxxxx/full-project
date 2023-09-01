@@ -1,0 +1,207 @@
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+  'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.ant-btn-primary-disabled,
+.ant-btn-primary.disabled,
+.ant-btn-primary[disabled],
+.ant-btn-primary-disabled:hover,
+.ant-btn-primary.disabled:hover,
+.ant-btn-primary[disabled]:hover,
+.ant-btn-primary-disabled:focus,
+.ant-btn-primary.disabled:focus,
+.ant-btn-primary[disabled]:focus,
+.ant-btn-primary-disabled:active,
+.ant-btn-primary.disabled:active,
+.ant-btn-primary[disabled]:active,
+.ant-btn-primary-disabled.active,
+.ant-btn-primary.disabled.active,
+.ant-btn-primary[disabled].active {
+  background-color: #bfbfbf !important;
+  border-color: #bfbfbf !important;
+  color: white !important;
+}
+
+.ant-menu-vertical .ant-menu-item::after,
+.ant-menu-vertical-left .ant-menu-item::after,
+.ant-menu-vertical-right .ant-menu-item::after,
+.ant-menu-inline .ant-menu-item::after {
+  border-right: none !important;
+}
+
+.ant-menu-inline .ant-menu-item {
+  margin-top: 0 !important;
+}
+
+.ant-menu-submenu-selected {
+  color: #2c2c2c !important;
+  font-weight: bold;
+}
+
+.ant-menu-submenu-selected .ant-menu-item {
+  font-weight: normal !important;
+}
+
+.ant-menu-item-active {
+  color: #2c2c2c !important;
+}
+
+.ant-menu-horizontal > .ant-menu-item > a:hover {
+  color: #2c2c2c;
+}
+
+/* .ant-card {
+  box-shadow: 0 0 6px rgba(222, 228, 245, 0.6) !important;
+} */
+.ant-table-small {
+  border: none !important;
+}
+
+.ant-card-bordered {
+  border: none !important;
+}
+
+.ant-menu-item.ant-menu-item-selected {
+  background-color: #f3f3f3 !important;
+  font-weight: bold !important;
+  color: #6c6c6c !important;
+}
+
+.ant-table-tbody > tr:hover td {
+  background-color: #e6e6e6 !important;
+}
+
+.ant-list-item-meta-title {
+  margin-bottom: 0 !important;
+}
+
+.ant-list-item-meta-description {
+  font-size: 12px !important;
+}
+
+.ant-drawer-body {
+  padding: 10px 0 !important;
+}
+
+.TaskDetailDrawser .ant-drawer-body {
+  padding: 0 !important;
+}
+
+.ant-fullcalendar-fullscreen .ant-fullcalendar-month:hover,
+.ant-fullcalendar-fullscreen .ant-fullcalendar-date:hover {
+  background-color: #f9f9f9 !important;
+}
+
+.ant-fullcalendar-fullscreen .ant-fullcalendar-month-panel-selected-cell .ant-fullcalendar-month,
+.ant-fullcalendar-fullscreen .ant-fullcalendar-selected-day .ant-fullcalendar-date {
+  background-color: #e9e9e9 !important;
+}
+
+.ant-calendar-date:hover,
+.ant-calendar-selected-day .ant-calendar-date {
+  color: white !important;
+}
+
+input[type=button] {
+  background: none;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  padding: 4px 10px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+input[type=button]:active,
+input[type=button]:focus {
+  background: #6c6c6c;
+  color: white;
+}
+
+video {
+  width: 100%
+}
+
+.react-grid-Grid {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -o-user-select: text !important;
+  -ms-user-select: text !important;
+  user-select: text !important;
+}
+
+.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+  z-index: 0 !important;
+}
+
+.w-e-text-container {
+  padding: 10px 0 !important;
+  background: none !important;
+}
+
+.w-e-text-container [data-slate-editor] h1, .w-e-text-container [data-slate-editor] h2, .w-e-text-container [data-slate-editor] h3, .w-e-text-container [data-slate-editor] h4, .w-e-text-container [data-slate-editor] h5, .w-e-text-container [data-slate-editor] p {
+  margin: 0 !important;
+}
+
+.w-e-text-placeholder {
+  top: 8px !important;
+  font-style: normal !important;
+  color: #bfbfbf !important;
+}
+
+.ant-avatar-string {
+  top: 50% !important;
+  transform-origin: center !important;
+  transform: translate(-50%, -50%) scale(0.7) !important;
+}
+
+.fc-theme-standard .fc-scrollgrid {
+  border: none !important;
+}
+
+.fc-col-header-cell-cushion {
+  color: #555;
+}
+
+.fc .fc-daygrid-day-number {
+  color: #666;
+}
+
+.fc-h-event, .fc-daygrid-event-dot {
+  background-color: #555 !important;
+  border-color: #666 !important;
+}
+
+.fc-direction-ltr .fc-daygrid-event.fc-event-start, .fc-direction-rtl .fc-daygrid-event.fc-event-end {
+  color: #666;
+}
+:root{
+  --fc-event-bg-color: #555 !important;
+  --fc-event-border-color: #666 !important
+}
+.fc-timegrid-event-harness{
+  min-height: 22px !important;
+}
+
+.ant-btn-two-chinese-chars>:not(.anticon){
+  letter-spacing: 0 !important;
+}
+.w-e-text-container{
+  min-height: 100px !important;
+}
