@@ -1,7 +1,6 @@
 const md5 = require('md5');
 const STATUS = require('../config/status');
 const { AesEnToJava} = require('../middleware/utils');
-const messageApi = require('./message');
 // 表实例
 const UserDao = require('../middleware/dao/user');
 const userDao = new UserDao();
